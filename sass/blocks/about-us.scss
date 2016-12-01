@@ -30,27 +30,27 @@
   color: black;
 
   &--flower {
-    @include about-us-item-background("/img/icon-feature-1.svg");
+    @include about-us-item-background("img/icon-feature-1.svg");
   }
 
   &--money {
-    @include about-us-item-background("/img/icon-feature-2.svg");
+    @include about-us-item-background("img/icon-feature-2.svg");
   }
 
   &--heart {
-    @include about-us-item-background("/img/icon-feature-3.svg");
+    @include about-us-item-background("img/icon-feature-3.svg");
   }
 
   &--ball {
-    @include about-us-item-background("/img/icon-feature-4.svg");
+    @include about-us-item-background("img/icon-feature-4.svg");
   }
 
   &--rocket {
-    @include about-us-item-background("/img/icon-feature-5.svg");
+    @include about-us-item-background("img/icon-feature-5.svg");
   }
 
   &--gift {
-    @include about-us-item-background("/img/icon-feature-6.svg");
+    @include about-us-item-background("img/icon-feature-6.svg");
   }
 }
 

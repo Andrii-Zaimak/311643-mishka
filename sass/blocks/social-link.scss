@@ -17,15 +17,15 @@
   vertical-align: middle;
 
   &--in {
-    @include social-link-icon-url("/img/icon-insta.svg");
+    @include social-link-icon-url("img/icon-insta.svg");
   }
 
   &--fb {
-    @include social-link-icon-url("/img/icon-fb.svg");
+    @include social-link-icon-url("img/icon-fb.svg");
   }
 
   &--tw {
-    @include social-link-icon-url("/img/icon-twitter.svg");
+    @include social-link-icon-url("img/icon-twitter.svg");
   }
 
 }

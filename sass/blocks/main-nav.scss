@@ -12,11 +12,11 @@
   outline: none;
 
   &--closed {
-    background-image: url("/img/icon-menu-open.svg");
+    background-image: url("img/icon-menu-open.svg");
   }
 
   &--opened {
-    background-image: url("/img/icon-menu-close.svg");
+    background-image: url("img/icon-menu-close.svg");
   }
 
 }
@@ -64,13 +64,13 @@
   padding-left: 75px;
 
   &--search {
-    background-image: url("/img/icon-search.svg");
+    background-image: url("img/icon-search.svg");
     background-repeat: no-repeat;
     background-position: 30px 50%;
   }
 
   &--cart {
-    background-image: url("/img/icon-cart.svg");
+    background-image: url("img/icon-cart.svg");
     background-repeat: no-repeat;
     background-position: 30px 50%;
   }

@@ -61,12 +61,12 @@
   }
 
   &--prev {
-    @include comments-btn-background("/img/icon-left-arrow.svg");
+    @include comments-btn-background("img/icon-left-arrow.svg");
   }
   &--next {
     width: 131px;
     margin-left: -1px;
 
-    @include comments-btn-background("/img/icon-right-arrow.svg");
+    @include comments-btn-background("img/icon-right-arrow.svg");
   }
 }
