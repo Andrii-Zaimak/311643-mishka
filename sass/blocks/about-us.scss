@@ -1,0 +1,59 @@
+@mixin about-us-item-background($url) {
+  background-image: url($url);
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.about-us {
+  text-align: center;
+}
+
+.about-us__wrapper {
+  margin: 0 30px;
+
+  text-align: left;
+}
+
+.about-us_title {
+  @include title-font-style;
+}
+
+.about-us__list {
+  @include reset-list-style;
+}
+
+.about-us__item {
+  padding: 30px 0px;
+
+  font-size: 17px;
+  font-weight: bold;
+  color: black;
+
+  &--flower {
+    @include about-us-item-background("/img/icon-feature-1.svg");
+  }
+
+  &--money {
+    @include about-us-item-background("/img/icon-feature-2.svg");
+  }
+
+  &--heart {
+    @include about-us-item-background("/img/icon-feature-3.svg");
+  }
+
+  &--ball {
+    @include about-us-item-background("/img/icon-feature-4.svg");
+  }
+
+  &--rocket {
+    @include about-us-item-background("/img/icon-feature-5.svg");
+  }
+
+  &--gift {
+    @include about-us-item-background("/img/icon-feature-6.svg");
+  }
+}
+
+.about-us__write-to-us {
+  margin-top: 38px;
+}

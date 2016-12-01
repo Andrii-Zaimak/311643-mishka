@@ -1,0 +1,43 @@
+.page-footer {
+
+}
+
+.page-footer__wrapper {
+  height: 160px;
+
+  margin-top: 39px;
+  padding: 0 30px;
+
+  background-color: #f1f1f1;
+
+  text-align: center;
+}
+
+.page-footer__copyright {
+  margin: 0;
+
+  padding-top: 5px;
+
+  @include title-font-style;
+
+  font-size: 19px;
+
+  vertical-align: middle;
+  text-align: center;
+}
+
+.page-footer__copyright-link {
+  display: inline-block;
+  width: 27px;
+  height: 34px;
+
+  margin-left: 25px;
+
+  background-image: url("/img/logo-htmlacademy.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  text-indent: -9999px;
+
+  vertical-align: middle;
+}

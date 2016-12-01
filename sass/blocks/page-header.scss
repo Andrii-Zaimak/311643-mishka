@@ -1,0 +1,28 @@
+$page-header-height: 78px;
+
+.page-header {
+  height: $page-header-height;
+  background-color: white;
+
+  border-top: $border-style;
+  border-bottom: $border-style;
+
+  text-align: center;
+  line-height: $page-header-height;
+
+  position: relative;
+}
+
+.page-header__wrapper {
+  margin: 0 30px;
+}
+
+.page-header__logo {
+  display: inline-block;
+}
+
+.page-header__logo-link{
+
+}
+
+

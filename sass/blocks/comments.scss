@@ -1,0 +1,73 @@
+@mixin comments-btn-background($url) {
+  background-image: url($url);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.comments {
+  margin-top: 30px;
+}
+
+.comments__title {
+  @include title-font-style;
+}
+
+.comments__item {
+  margin: 0;
+
+  &-text {
+    line-height: 30px;
+    @include text-style;
+  }
+
+}
+
+.comments__author-name {
+  line-height: 24px;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.comments__author-mail {
+  line-height: 30px;
+  @include text-style;
+  font-size: 18px;
+}
+
+.comments__pagination {
+  @include clearfix;
+  margin-top: 30px;
+}
+
+.comments__btn {
+  display: inline-block;
+  float: left;
+
+  width: 130px;
+
+  text-indent: -9999px;
+
+  border: $border-style;
+
+  &:hover,
+  &:active {
+    background-color: white;
+    border: $border-style;
+  }
+
+  &:active {
+    border: $border-style;
+  }
+
+  &--prev {
+    @include comments-btn-background("/img/icon-left-arrow.svg");
+  }
+  &--next {
+    width: 131px;
+    margin-left: -1px;
+
+    @include comments-btn-background("/img/icon-right-arrow.svg");
+  }
+}
+

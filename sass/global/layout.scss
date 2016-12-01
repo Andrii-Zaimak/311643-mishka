@@ -1,0 +1,55 @@
+html,
+body {
+  width: 320px;
+  margin: 0 auto;
+  background-color: white;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+html {
+  background: grey;
+}
+
+
+img {
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.btn {
+  display: block;
+
+  box-sizing: border-box;
+
+  height: 52px;
+
+  background-color: white;
+  border: 2px solid $text-color;
+
+  line-height: 52px;
+  font-size: 18px;
+  font-weight: bold;
+  color: $text-color;
+
+  text-align: center;
+
+  &:hover,
+  &:active {
+    background-color: $text-color;
+    border: none;
+
+    color: white;
+  }
+
+  &:active {
+    color: rgba(white, 0.3);
+  }
+
+}
