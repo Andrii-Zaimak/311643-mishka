@@ -52,7 +52,7 @@
     height: 282px;
     line-height: 282px;
 
-    background-image: url("img/hero-mobile@1x.jpg");
+    background-image: url("../img/hero-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
@@ -100,10 +100,10 @@
   line-height: 24px;
 
   &--interior {
-    @include page-intro__nav-item-style(#63d1bb, #59d5bc, #59d5bc, "img/icon-interior.svg");
+    @include page-intro__nav-item-style(#63d1bb, #59d5bc, #59d5bc, "../img/icon-interior.svg");
   }
 
   &--toys {
-    @include page-intro__nav-item-style(#56c3b2, #46c1ae, #46c1ae, "img/icon-toy.svg");
+    @include page-intro__nav-item-style(#56c3b2, #46c1ae, #46c1ae, "../img/icon-toy.svg");
   }
 }
