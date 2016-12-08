@@ -1,27 +1,35 @@
 html,
 body {
-  width: 320px;
+  //width: 320px;
+  width: 768px;
   margin: 0 auto;
-  background-color: white;
+
+  background-color: grey;//$bg-white;
+
   font-family: "Open Sans", Arial, sans-serif;
+  font-style: normal;
 }
-
-html {
-  background: grey;
-}
-
 
 img {
-  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
 }
 
-a {
-  text-decoration: none;
+.visually-hidden{
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
-.visually-hidden {
-  display: none;
-}
+
 
 .btn {
   display: block;

@@ -1,26 +1,42 @@
-$page-header-height: 78px;
+$page-header-height: 80px;
 
 .page-header {
-  height: $page-header-height;
-  background-color: white;
+  background-color: $bg-white;
 
+  box-sizing: border-box;
   border-top: $border-style;
   border-bottom: $border-style;
-
-  text-align: center;
-  line-height: $page-header-height;
-
-  position: relative;
-}
-
-.page-header__wrapper {
-  margin: 0 30px;
 }
 
 .page-header__logo {
-  display: inline-block;
+  display: flex;
+
+  height: $page-header-height;
+
+  justify-content: center;
+  align-items: center;
 }
 
-.page-header__logo-link{
+//Start tablet styles
+@media #{$tablet-widths} {
 
+  .page-header {
+    max-height: 89px;
+    height: 89px;
+
+    //background-color: $bg-white;
+  }
+
+  .page-header__wrapper {
+    @include container-fluid();
+
+    display: flex;
+
+    padding: 0 50px;
+  }
+
+  .page-header__logo {
+
+  }
 }
+//End tablet styles

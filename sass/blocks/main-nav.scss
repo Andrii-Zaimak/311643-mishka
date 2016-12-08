@@ -1,77 +1,194 @@
 .main-nav {
-  display: inline-block;
+  position: relative;
+  width: auto;
 }
 
+//Start button styles
 .main-nav__toggle {
-  width: 20px;
-  height: 14px;
+  position: absolute;
+  top: -53px;
+  right: 31px;
+  width: 21px;
+  height: 21px;
+  z-index: 2;
 
   background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
   border: none;
+
   cursor: pointer;
   outline: none;
-
-  &--closed {
-    background-image: url("../img/icon-menu-open.svg");
-  }
-
-  &--opened {
-    background-image: url("../img/icon-menu-close.svg");
-  }
-
 }
 
-.main-nav__wrapper {
-
+.main-nav--closed .main-nav__toggle {
+  background-image: url("../img/icon-menu-open.svg");
 }
 
-.main-nav__list {
-  display: none;
-  position: absolute;
-  top: 80px;
-  left: 0px;
-  z-index: 100;
+.main-nav--opened .main-nav__toggle {
+  background-image: url("../img/icon-menu-close.svg");
+}
+//End button styles
 
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-
-  &--closed {
-    //display: none;
-  }
-
-  &--opened {
-    display: block;
-  }
+//Start nav style
+.main-nav__list{
+  @include reset-list-style();
 }
 
 .main-nav__item {
-  width: 320px;
-  height: 79px;
-
-  background-color: white;
-  border-bottom: $border-style;
+  margin: 0;
+  padding: 0;
 }
 
 .main-nav__link {
-  display: block;
-  font-family: "Open Sans";
-  font-size: 17px;
-  font-weight: bold;
-  color: black;
-  text-align: left;
+  @include reset-a-style();
+
+  padding-top: 27px;
+  padding-bottom: 27px;
   padding-left: 75px;
 
-  &--search {
-    background-image: url("../img/icon-search.svg");
-    background-repeat: no-repeat;
-    background-position: 30px 50%;
+  background-color: white;
+  box-sizing: border-box;
+  border-top: $border-style;
+
+  @include font-style(24px, 17px, bold, $text-color-black);
+  text-align: left;
+
+  &:hover {
+    opacity: 0.6;
   }
 
-  &--cart {
-    background-image: url("../img/icon-cart.svg");
-    background-repeat: no-repeat;
-    background-position: 30px 50%;
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--search {
+    @include background-image("../img/icon-search.svg", no-repeat, 30px 50%);
+  }
+
+  &--cart{
+    @include background-image("../img/icon-cart.svg", no-repeat, 30px 50%);
   }
 }
+//End nav style
+
+//Start mobile only nav
+@media #{$mobile-widths-only} {
+  .main-nav--closed .main-nav__item {
+    display: none;
+  }
+
+  .main-nav--opened .main-nav__wrapper {
+    /*position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;*/
+    width: 100%;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__wrapper {
+    position: static;
+
+    height: auto;
+  }
+
+  .main-nav--nojs .main-nav__item {
+    display: block;
+  }
+
+  .main-nav__free-delivery {
+    display: none;
+  }
+}
+//End mobile only nav
+
+//Start tablet style
+@media #{$tablet-widths} {
+  //Hide nav button
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav {
+    width: auto;
+    min-height: 89px;
+    margin: 0;
+
+    flex-grow: 1;
+  }
+
+  .main-nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+
+  .main-nav__list {
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .main-nav__item {
+    width: auto;
+  }
+
+  .main-nav__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    background-color: transparent;
+    border-top: none;
+
+    &--search {
+      width: 83px;
+      padding-left: 0px;
+
+      background-position: 50% 50%;
+      border-left: $border-style;
+
+      //clear text
+      text-indent: -9999px;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    &--cart {
+      border-left: $border-style;
+    }
+  }
+
+  .main-nav__item:first-child {
+    order: 3;
+    margin-right: auto;
+    flex-grow: 1;
+
+    margin-left: -30px;
+  }
+
+  .main-nav__item:nth-child(2) {
+    order: 4;
+    margin-right: auto;
+    flex-grow: 1;
+  }
+
+  .main-nav__item:nth-child(3) {
+    order: 1;
+
+  }
+
+  .main-nav__item:nth-child(4) {
+    order: 2;
+  }
+
+
+
+}
+//End tablet style

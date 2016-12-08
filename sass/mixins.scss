@@ -1,9 +1,32 @@
+@mixin debug-border($color: red) {
+  outline: 1px solid $color;
+}
+
+
 @mixin clearfix() {
   &::after {
     content: "";
     display: table;
     clear: both;
   }
+}
+
+@mixin container-fluid() {
+  width: auto;
+
+  @media #{$tablet-widths} {
+    width: 87%;
+    max-width: 1050px;
+    margin: 0 auto;
+  }
+}
+
+@mixin reset-a-style() {
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  text-decoration: none;
 }
 
 @mixin reset-list-style {
@@ -13,13 +36,23 @@
   list-style: none;
 }
 
-@mixin intro-title-font-style {
-  font-size: 27px;
-  font-weight: bold;
-  color: black;
-
-  line-height: 30px;
+@mixin background-image($url, $repeat, $position) {
+  background-image: url($url);
+  background-repeat: $repeat;
+  background-position: $position;
 }
+
+@mixin font-style($line-height, $size, $weight, $color) {
+  line-height: $line-height;
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}
+
+
+
+
+
 
 @mixin title-font-style {
   font-size: 25px;
