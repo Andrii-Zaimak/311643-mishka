@@ -13,11 +13,13 @@
 
 @mixin container-fluid() {
   width: auto;
+  padding: 0 $mobile-horizontal-padding;
 
   @media #{$tablet-widths} {
-    width: 87%;
-    max-width: 1050px;
+    max-width: 1150px;
     margin: 0 auto;
+
+    padding: 0 $tablet-horizontal-padding;
   }
 }
 
@@ -36,10 +38,14 @@
   list-style: none;
 }
 
-@mixin background-image($url, $repeat, $position) {
+@mixin background-image($url, $repeat, $position, $size: false) {
   background-image: url($url);
   background-repeat: $repeat;
   background-position: $position;
+
+  @if $size {
+    background-size: $size;
+  }
 }
 
 @mixin font-style($line-height, $size, $weight, $color) {
@@ -53,7 +59,7 @@
 
 
 
-
+//DELETE
 @mixin title-font-style {
   font-size: 25px;
   font-weight: bold;
