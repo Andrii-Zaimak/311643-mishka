@@ -1,0 +1,74 @@
+@mixin debug-border($color: red) {
+  outline: 1px solid $color;
+}
+
+
+@mixin clearfix() {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin container-fluid() {
+  width: auto;
+  padding: 0 $mobile-horizontal-padding;
+
+  @media #{$tablet-widths} {
+    max-width: 1150px;
+    margin: 0 auto;
+
+    padding: 0 $tablet-horizontal-padding;
+  }
+}
+
+@mixin reset-a-style() {
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  text-decoration: none;
+}
+
+@mixin reset-list-style {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+@mixin background-image($url, $repeat, $position, $size: false) {
+  background-image: url($url);
+  background-repeat: $repeat;
+  background-position: $position;
+
+  @if $size {
+    background-size: $size;
+  }
+}
+
+@mixin font-style($line-height, $size, $weight, $color) {
+  line-height: $line-height;
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}
+
+
+
+
+
+//DELETE
+@mixin title-font-style {
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
+
+  line-height: 30px;
+}
+
+@mixin text-style {
+  font-size: 15px;
+  color: $text-color;
+}
