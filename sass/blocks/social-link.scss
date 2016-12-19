@@ -1,31 +1,31 @@
-@mixin social-link-icon-url($url) {
-  background-image: url($url);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
-
 .social-link {
   display: inline-block;
 
   width: 45px;
   height:  45px;
 
-  margin-right: 10px;
+  font-size: 0px;
 
-  text-indent: -9999px;
-
-  vertical-align: middle;
-
-  &--in {
-    @include social-link-icon-url("../img/icon-insta.svg");
+  &:not(:last-child) {
+    margin-right: 10px;
   }
 
-  &--fb {
-    @include social-link-icon-url("../img/icon-fb.svg");
+  svg {
+    transition: opacity 0.3s ease,
+                fill 0.3s ease;
   }
 
-  &--tw {
-    @include social-link-icon-url("../img/icon-twitter.svg");
+  &:hover {
+    svg {
+      fill: #46c1ae;
+    }
+  }
+
+  &:active {
+    svg {
+      fill: #46c1ae;
+      opacity: 0.3;
+    }
   }
 
 }
