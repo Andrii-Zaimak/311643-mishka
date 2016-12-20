@@ -8,7 +8,9 @@
 }
 
 .contacts__title {
-  padding-top: 72px;
+  margin: 0;
+  margin-top: 42px;
+  margin-left: -2px;
 
   @include font-style(30px, 18px, bold, $color-black);
 }
@@ -20,7 +22,7 @@
 
 .contacts__email {
   display: flex;
-  margin-top: 11px;
+  margin-top: 25px;
 }
 
 .contacts__email-title,
@@ -63,7 +65,12 @@
 .contacts__map-container {
   position: relative;
   margin: 0px -30px;
-  margin-top: 37px;
+  margin-top: 38px;
+  text-align: center;
+
+  img {
+    height: 457px;
+  }
 
   &::after {
     content: "";
@@ -74,7 +81,7 @@
     width: 100%;
     height: 100%;
 
-    @include background-image("../img/icon-map-pin.svg", no-repeat, 49% 45%);
+    @include background-image("../img/icon-map-pin.svg", no-repeat, 49% 45.5%);
   }
 }
 
@@ -89,14 +96,13 @@
   .contacts__wrapper {
     flex-direction: row;
     flex-wrap: wrap;
-    @include background-image("../img/icon-flag.svg", no-repeat, 92.6% 130px);
+    @include background-image("../img/icon-flag.svg", no-repeat, 92.6% 61.5px);
   }
 
   .contacts__title {
     width: 100%;
-    margin: 0px;
-    margin-left: -3px;
-    padding-top: 146px;
+    margin-top: 77px;
+    margin-left: -4px;
     @include font-style(50px, 43px,bold, $color-black);
   }
 
@@ -113,8 +119,18 @@
   }
 
   .contacts__map-container {
+    flex-grow: 1;
     width: 100%;
-    margin-top: 57px;
+    margin: 0px $tablet-horizontal-padding * -1;
+    padding-top: 57px;
+
+    img {
+      width: 768px;
+    }
+
+    &::after {
+      background-position: 347.5px 222px;
+    }
   }
 
   .contacts__write-to-us {
@@ -133,11 +149,11 @@
     flex-direction: column;
     padding-left: 225px;
 
-    background-position: 113px 222px;
+    background-position: 113px 155px;
   }
 
   .contacts__title {
-    padding-top: 232px;
+    margin-top: 164px;
 
     @include font-style(57px, 53px, bold, $color-black);
   }
@@ -148,16 +164,20 @@
 
   .contacts__map-container {
     position: absolute;
-    top: 161px;
+    top: 94px;
     right: $desktop-horizontal-padding;
     width: 525px;
     height: 457px;
     margin: 0;
     padding: 0;
+
+    &::after {
+      background-position: 236px 166px;
+    }
   }
 
   .contacts__write-to-us {
-    margin: 79px auto 105px 0px;
+    margin: 80px auto 105px 0px;
   }
 }
 //End desktop style

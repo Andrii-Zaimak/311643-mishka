@@ -1,12 +1,14 @@
 //Start main styles
+.page-footer {
+  background-color: #f1f1f1;
+}
+
 .page-footer__wrapper {
   @include container-fluid();
   display: flex;
   flex-direction: column;
   flex-basis: 50%;
   height: 160px;
-
-  background-color: #f1f1f1;
 }
 
 .page_footer__logo {
@@ -100,8 +102,6 @@
         opacity: 0.3;
       }
     }
-
-    @include debug-border();
   }
 
   .page_footer__logo,
