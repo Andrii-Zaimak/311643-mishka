@@ -64,7 +64,7 @@
     @media  (max-width: 767px) and (min-resolution: 144dpi),
             (max-width: 767px) and (min-resolution: 1.5dppx) {
       @include background-image("../img/hero-mobile@2x.jpg", no-repeat, 50% -18px);
-      background-size: 1150px auto;
+      background-size: 768px auto;
     }
   }
 }
@@ -160,7 +160,7 @@
       @media  (min-width: 768px) and (min-resolution: 144dpi),
               (min-width: 768px) and (min-resolution: 1.5dppx) {
         @include background-image("../img/hero-desktop@2x.jpg", no-repeat, 50% 1px);
-        background-size: 2300px auto;
+        background-size: 1150px auto;
       }
     }
   }
