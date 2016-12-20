@@ -54,21 +54,3 @@
   font-weight: $weight;
   color: $color;
 }
-
-
-
-
-
-//DELETE
-@mixin title-font-style {
-  font-size: 25px;
-  font-weight: bold;
-  color: black;
-
-  line-height: 30px;
-}
-
-@mixin text-style {
-  font-size: 15px;
-  color: $text-color;
-}
