@@ -12,8 +12,16 @@
 
   svg {
     transition: opacity 0.3s ease,
-                fill 0.3s ease;
+    fill 0.3s ease;
   }
+
+  &:link,
+  &:visited {
+    svg {
+      fill: black;
+    }
+  }
+
 
   &:hover {
     svg {

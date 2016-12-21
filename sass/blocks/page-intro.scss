@@ -1,7 +1,12 @@
 @mixin page-intro__nav-item-style($up-color, $over-color, $down-color) {
   background-color: $up-color;
 
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease,
+              margin 0.3s ease;
+
+  a {
+    transition: padding 0.3s ease;
+  }
 
   span {
     transition: color 0.3s ease;
