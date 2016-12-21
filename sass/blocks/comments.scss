@@ -139,6 +139,12 @@
     display: flex;
     flex-wrap: wrap;
     @include background-image("../img/review@1x.jpg", no-repeat, left 80px);
+
+    @media (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
+      @include background-image("../img/review@2x.jpg", no-repeat, left 80px);
+      width: 350px;
+      height: auto;
+    }
   }
 
   .comments__title {
