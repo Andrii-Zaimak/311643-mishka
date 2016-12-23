@@ -53,6 +53,8 @@ $catalog-tablet-item-size: 334px;
   &--cart {
     display: inline-block;
 
+    vertical-align: middle;
+
     svg {
       opacity: 0.2;
 

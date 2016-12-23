@@ -67,10 +67,14 @@
 .featured__description-item-title {
   display: inline-block;
   width: 35.8%;
+
+  vertical-align: baseline;
 }
 
 .featured__description-item-value {
   display: inline-block;
+
+  vertical-align: baseline;
 }
 //End description
 
@@ -127,6 +131,7 @@
     margin-left: -3px;
 
     @include font-style(50px, 43px, bold, $color-black);
+    vertical-align: middle;
   }
 
   .featured__title-note {
@@ -139,6 +144,7 @@
 
     @include font-style(17px, 16px, bold, $color-aqua);
     text-align: center;
+    vertical-align: middle;
     letter-spacing: 1px;
   }
   //End title style
