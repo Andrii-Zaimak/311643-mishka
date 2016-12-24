@@ -1,5 +1,5 @@
 .popup {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 10;
@@ -15,7 +15,7 @@
   width: 566px;
   margin: 0 auto;
   padding: 0 105px;
-  
+
   background-color: $color-white;
   border: $border-style;
 
