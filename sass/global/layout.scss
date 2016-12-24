@@ -13,7 +13,7 @@ body {
 
   background-color: $bg-white;
 
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
 }
 
@@ -22,7 +22,7 @@ img {
   height: auto;
 }
 
-.visually-hidden{
+.visually-hidden {
   position: absolute;
 
   width: 1px;

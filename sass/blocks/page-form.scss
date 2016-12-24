@@ -205,6 +205,8 @@
   &--checkbox {
     padding-left: 63px;
 
+    cursor: pointer;
+
     &::before {
       position: absolute;
       top: 0;

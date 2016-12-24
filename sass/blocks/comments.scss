@@ -142,8 +142,7 @@
 
     @media (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
       @include background-image("../img/review@2x.jpg", no-repeat, left 80px);
-      width: 350px;
-      height: auto;
+      background-size: 350px auto;
     }
   }
 

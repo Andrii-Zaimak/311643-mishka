@@ -29,7 +29,7 @@ gulp.task("style", function() {
       ]}),
       mqpacker(
         {
-          sort: true
+          sort: false
         }
       )
     ]))
@@ -85,8 +85,8 @@ gulp.task("serve", function() {
     ui: false
   });
 
-  gulp.watch("build/sass/**/*.{scss,sass}", ["style"]);
-  gulp.watch("build/*.html").on("change", server.reload);
+  gulp.watch("sass/**/*.scss", ["style"]);
+  gulp.watch("*.html").on("change", server.reload);
 });
 
 gulp.task("build", function (fn) {

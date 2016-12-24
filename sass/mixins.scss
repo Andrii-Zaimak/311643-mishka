@@ -2,7 +2,6 @@
   outline: 1px solid $color;
 }
 
-
 @mixin clearfix() {
   &::after {
     content: "";
