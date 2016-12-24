@@ -9,7 +9,7 @@
     width: 100%;
     height: 6px;
 
-    @include background-image("../img/bg-zigzag-line.svg",repeat-x, left bottom, auto 6px);
+    @include background-image("../img/bg-zigzag-line.svg", repeat-x, left bottom, auto 6px);
   }
 }
 
@@ -38,6 +38,7 @@
   @include font-style(16px, 17px, bold, $color-aqua);
   text-transform: uppercase;
 }
+
 //End title style
 
 //Start description
@@ -76,6 +77,7 @@
 
   vertical-align: baseline;
 }
+
 //End description
 
 .featured__item-img-container {
@@ -100,6 +102,7 @@
   margin-top: 26px;
   margin-bottom: 35px;
 }
+
 //End main styles
 
 //Start tablet style
@@ -200,6 +203,7 @@
     margin-left: -2px;
   }
 }
+
 //End tablet style
 
 //Start tablet style
@@ -282,4 +286,5 @@
     margin-bottom: 73px;
   }
 }
+
 //End tablet style

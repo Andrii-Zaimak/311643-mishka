@@ -15,18 +15,20 @@ var del = require("del");
 var server = require("browser-sync").create();
 var run = require("run-sequence");
 
-gulp.task("style", function() {
+gulp.task("style", function () {
   gulp.src("sass/style.scss")
     .pipe(plumber())
     .pipe(sass())
     .pipe(postcss([
-      autoprefixer({browsers: [
-        "last 1 versions",
-        "last 2 Chrome versions",
-        "last 2 Firefox versions",
-        "last 2 Opera versions",
-        "last 2 Edge versions"
-      ]}),
+      autoprefixer({
+        browsers: [
+          "last 1 versions",
+          "last 2 Chrome versions",
+          "last 2 Firefox versions",
+          "last 2 Opera versions",
+          "last 2 Edge versions"
+        ]
+      }),
       mqpacker(
         {
           sort: false
@@ -51,32 +53,32 @@ gulp.task("copy", function () {
       "img/**",
       "js/**",
       "*.html"
-      ],
-      {
-        base: "."
-      }
+    ],
+    {
+      base: "."
+    }
     )
     .pipe(gulp.dest("build"));
 });
 
 gulp.task("images", function () {
   return gulp.src("img/**/*.{png,jpg,gif}")
-        .pipe(imagemin([
-            imagemin.optipng({optimizationLevel: 3}),
-            imagemin.jpegtran({progressive: true})
-          ]))
-        .pipe(gulp.dest("img"));
+    .pipe(imagemin([
+      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.jpegtran({progressive: true})
+    ]))
+    .pipe(gulp.dest("img"));
 });
 
 gulp.task("symbols", function () {
   return gulp.src("img/icons/*.svg")
     .pipe(svgmin())
-    .pipe(svgstore({ inlineSvg: true }))
+    .pipe(svgstore({inlineSvg: true}))
     .pipe(rename("symbols.svg"))
     .pipe(gulp.dest("img"))
 });
 
-gulp.task("serve", function() {
+gulp.task("serve", function () {
   server.init({
     server: "build",
     notify: false,

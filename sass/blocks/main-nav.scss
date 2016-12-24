@@ -36,6 +36,7 @@
 
   @include background-image("../img/icon-menu-close.svg", no-repeat, 50% 50%, 21px 21px);
 }
+
 //End button style
 
 //Start nav style
@@ -54,7 +55,6 @@
 
   border-bottom: $border-style;
   @include font-style(24px, 17px, bold, $color-black);
-
 
   a {
     @include reset-a-style();
@@ -161,8 +161,8 @@
   width: 20px;
   height: 19px;
 }
-//End nav style
 
+//End nav style
 
 //Start mobile only style
 @media #{$mobile-widths-only} {
@@ -189,6 +189,7 @@
     }
   }
 }
+
 //End mobily only style
 
 //Start tablet style
@@ -255,7 +256,7 @@
 
     &--cart {
       order: -1;
-      width: 40.86%;//38.85%;
+      width: 40.86%; //38.85%;
       font-size: 17px;
       border-bottom: $border-style;
 
@@ -311,6 +312,7 @@
     left: 10%;
   }
 }
+
 //End tablet style
 
 @media #{$desktop-widths} {
@@ -353,8 +355,8 @@
       }
 
       img {
-        width: 149px;//148px;
-        height: 72px;//73px;
+        width: 149px; //148px;
+        height: 72px; //73px;
       }
     }
 

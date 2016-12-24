@@ -22,11 +22,11 @@ $catalog-tablet-item-size: 334px;
     margin-bottom: 30px;
   }
 
-  &:hover  {
+  &:hover {
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1), 0 6px 10px 0 rgba(0, 0, 0, 0.1);
   }
 
-  &:active  {
+  &:active {
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1), 0 3px 5px 0 rgba(0, 0, 0, 0.1);
   }
 }
@@ -59,7 +59,7 @@ $catalog-tablet-item-size: 334px;
       opacity: 0.2;
 
       transition: fill 0.3s ease,
-                  opacity 0.3s ease;
+      opacity 0.3s ease;
     }
 
     &:hover {
@@ -124,6 +124,7 @@ $catalog-tablet-item-size: 334px;
   border-top: $border-style;
   @include font-style(24px, 15px, bold, $color-black);
 }
+
 //End main styles
 
 //Start tablet style
@@ -183,6 +184,7 @@ $catalog-tablet-item-size: 334px;
     @include font-style(24px, 17px, bold, $color-black);
   }
 }
+
 //End tablet style
 
 //Start desktop style
@@ -196,7 +198,7 @@ $catalog-tablet-item-size: 334px;
     flex-direction: column;
     width: 316px;
 
-    &:not(:last-child){
+    &:not(:last-child) {
       margin: 0;
       margin-right: 51px;
     }
@@ -226,4 +228,5 @@ $catalog-tablet-item-size: 334px;
     border-top: $border-style;
   }
 }
+
 //End desktop style

@@ -77,7 +77,6 @@
 
 .page-form__group-name {
   display: flex;
-  width: 100%;
   margin-bottom: 26px;
 
   @include font-style(16px, 17px, bold, $color-aqua);
@@ -280,6 +279,7 @@
     padding-top: 1px;
   }
 }
+
 //End main styles
 
 //Start mobile only style
@@ -336,6 +336,7 @@
     }
   }
 }
+
 //End mobile only style
 
 //Start tablet style
@@ -506,6 +507,7 @@
     margin: 0;
   }
 }
+
 //End tablet style
 
 //Start tablet style
@@ -574,4 +576,5 @@
     left: 225px;
   }
 }
+
 //End tablet style

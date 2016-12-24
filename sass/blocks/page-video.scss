@@ -13,11 +13,11 @@
   padding: 0 34px;
   border: $border-style;
 
-  &:hover  {
+  &:hover {
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1), 0 6px 10px 0 rgba(0, 0, 0, 0.1);
   }
 
-  &:active  {
+  &:active {
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1), 0 3px 5px 0 rgba(0, 0, 0, 0.1);
   }
 }
@@ -41,6 +41,7 @@
 
   @include font-style(24px, 17px, bold, $color-black);
 }
+
 //End title styles
 
 //Start video player style
@@ -69,7 +70,7 @@
   @include background-image("../img/icon-play.svg", no-repeat, 0 0);
 
   transition: transform 0.3s ease,
-              opacity 0.3s ease;
+  opacity 0.3s ease;
 
   &:hover {
     transform: scale(1.2);
@@ -80,6 +81,7 @@
     opacity: 0.3;
   }
 }
+
 //End video player style
 
 .page-video__description {
@@ -95,6 +97,7 @@
   margin-left: 1px;
   margin-right: -1px;
 }
+
 //End main styles
 
 //Start tablet style
@@ -155,6 +158,7 @@
     margin-bottom: 45px;
   }
 }
+
 //End tablet style
 
 //Start desktop style
@@ -223,4 +227,5 @@
     margin-right: 0px;
   }
 }
+
 //End desktop style
