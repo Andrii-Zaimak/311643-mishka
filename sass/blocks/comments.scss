@@ -35,10 +35,6 @@
 
 .comments__item-text {
   @include font-style(30px, 15px, regular, $color-dark-grey);
-
-  br {
-    display: none;
-  }
 }
 
 .comments__author-name {
@@ -238,9 +234,7 @@
   }
 
   .comments__item-text {
-    br {
-      display: inline;
-    }
+    padding-right: 105px;
   }
 
   .comments__author-name {

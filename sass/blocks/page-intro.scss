@@ -141,6 +141,12 @@
 
 //Start mobile style
 @media #{$mobile-widths-only} {
+  .page-intro__title {
+    &--index {
+      width: 250px;
+    }
+  }
+
   .page-intro__title-container {
     &--index {
       padding-left: $mobile-horizontal-padding;
@@ -153,6 +159,7 @@
 
 //Start tablet style
 @media #{$tablet-widths} {
+
   .page-intro {
     position: relative;
     margin-top: -61px;
@@ -198,6 +205,10 @@
   .page-intro__title {
     @include font-style(50px, 43px, bold, $color-black);
     text-align: center;
+
+    &--index {
+      width: 550px;
+    }
   }
   //End title style
 
@@ -273,6 +284,10 @@
   .page-intro__title {
     @include font-style(57px, 53px, bold, $color-black);
     text-align: center;
+
+    &--index {
+      width: 650px;
+    }
   }
   //End title style
 
